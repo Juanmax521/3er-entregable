@@ -12,7 +12,7 @@ namespace _3er_entregable.Domain.Interfaces
 
         Task<Country> EditCountryAsync(Country country); // Actualiza un país existente
 
-        Task<Country> DeleteCountryAsunc(Guid id); // Elimina un país existente
+        Task<Country> DeleteCountryAsync(Guid id); // Elimina un país existente
 
     }
 }
