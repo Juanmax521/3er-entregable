@@ -8,7 +8,7 @@ namespace _3er_entregable.Domain.Interfaces
 
         Task<Country> CreateCountryAsync(Country country); // Crea un nuevo país
 
-        Task<Country> GetCountryById(Guid id); // Obtiene un país por su ID
+        Task<Country> GetCountryByIdAsync(Guid id); // Obtiene un país por su ID
 
         Task<Country> EditCountryAsync(Country country); // Actualiza un país existente
 
