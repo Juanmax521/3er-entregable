@@ -16,10 +16,14 @@ namespace _3er_entregable.DAL
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Country>().HasIndex(c => c.Name).IsUnique(); // Crea un índice en el campo Name de la tabla Country
+            modelBuilder.Entity<State>().HasIndex("Name","CountryId").IsUnique(); // indice compuesto
         }
 
         #region
-        public DbSet<Entities.Country> Countries { get; set; } // Tabla de paises
+        public DbSet<Country> Countries { get; set; } // Tabla de paises
+
+        public DbSet<State> States { get; set; } // Tabla de estados/departamentos
+
         #endregion
 
 
